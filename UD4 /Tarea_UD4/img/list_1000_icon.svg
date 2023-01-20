@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="92" height="112" viewBox="0 0 92 112">
+  <g id="list_1000_icon" transform="translate(-14 16)">
+    <g id="Group_236" data-name="Group 236">
+      <g id="Group_233" data-name="Group 233">
+        <rect id="Rectangle_93" data-name="Rectangle 93" width="60" height="80" rx="8" transform="translate(18 12)" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g id="Group_234" data-name="Group 234">
+        <path id="Path_438" data-name="Path 438" d="M30,11.843V8a8,8,0,0,1,8-8H82a8,8,0,0,1,8,8V72a8,8,0,0,1-8,8H79.817" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g id="Group_235" data-name="Group 235">
+        <path id="Path_439" data-name="Path 439" d="M42-.157V-4a8,8,0,0,1,8-8H94a8,8,0,0,1,8,8V60a8,8,0,0,1-8,8H91.228" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+    </g>
+    <g id="Group_237" data-name="Group 237">
+      <path id="Path_440" data-name="Path 440" d="M31.563,68a16.44,16.44,0,0,1,32.874,0" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="8"/>
+      <ellipse id="Ellipse_57" data-name="Ellipse 57" cx="7.604" cy="7.942" rx="7.604" ry="7.942" transform="translate(40.396 36)" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="8"/>
+    </g>
+    <line id="Line_18" data-name="Line 18" x2="32.875" transform="translate(31.563 68)" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="8"/>
+  </g>
+</svg>
