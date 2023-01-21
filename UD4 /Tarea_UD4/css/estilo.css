@@ -220,23 +220,27 @@ li::marker {
     background-color: rgb(32, 39, 49);
     float: left;
     width: 25%;
+    /* padding: 0 10; */
 }
 .img_contenido_seccion_3 {
     width: 20%;
     padding-top: 10px;
     height: 40px;
-
 }
-
+.contenedor_seccion_3_separacion p {
+    padding: 0 30px;
+    height: 20px;
+}
 /* For screen responsive 940px */
-
 
 [class*="col-"] {
     width: 100%;
   }
-
-  @media only screen and (min-width: 940px) {
+@media only screen and (min-width: 480px) {
     /* For desktop: */
-    .col-3 {width: calc(50% - 1em)}
-    .col-12 {width: 100%;} 
+    .col-s-3 {width: 25%;}
+  }
+@media only screen and (min-width: 940px) {
+    /* For desktop: */
+    .col-3 {width: calc(50% - 1em);}
   }
