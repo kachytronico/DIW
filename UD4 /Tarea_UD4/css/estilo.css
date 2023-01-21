@@ -44,7 +44,7 @@ h3 {
     font-size: 24px;
     font-weight: 500;
     margin-block-start: 0px;
-    margin-block-end: 20px;
+    margin-block-end: 0px;
 }
 
 /* Resaltado en amarillo de h1 y h2 con forma */
@@ -213,8 +213,8 @@ li::marker {
     font-size: 16px;
     text-align: center;
     background-color: rgb(32, 39, 49);
-    padding: 10px;
-    height: 20px;
+    padding: 20px;
+    height: 30px;
 }
 .contenido_seccion_3 {
     background-color: rgb(32, 39, 49);
