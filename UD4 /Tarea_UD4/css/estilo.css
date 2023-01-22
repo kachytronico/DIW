@@ -11,8 +11,8 @@ body {
   /* Links */
 a {
     font-family: 'Prompt', sans-serif;
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 500;
 	/* padding-left: 2px;
 	padding-top: 2px;
 	padding-right: 2px;
@@ -27,7 +27,7 @@ h1 {
     font-family: 'Prompt', sans-serif;
     font-size: 24px;
     font-weight: 500;
-    margin: 0.8em 0;
+    margin: 0.8em 0 0.1em;
 }
 h2 {
     font-family: 'Prompt', sans-serif;
@@ -65,51 +65,54 @@ h3 {
     text-align: center;
 }
 
-
 /* estilos de parrafo */
 strong, b {  
-    font-weight: 600; 
+    font-weight: 550; 
 }
 .p_negrita {
     font-family: 'Prompt', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
+    padding: 10px;
+
 }
 .p_normal {
     font-family: 'Prompt', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 200%;
+    text-align: justify;
+    line-height: 180%;
     padding-right: 50px;
     margin-block-start: 20px;
     margin-block-end: 20px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    letter-spacing: 1px;
 }
 .p_transparente_06 {
     font-family: 'Prompt', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
+    padding: 10px;
     color: rgba(0, 0, 0, 0.6);
 }
 
 .p_transparente_04 {
     font-family: 'Prompt', sans-serif;
     font-size: 14px;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.4);
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
     margin-block-start: 0px;
     margin-block-end: 0px;
 }
 .p_lista {
     font-family: 'Prompt', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 300%;
     margin-block-start: 20px;
     margin-block-end: 20px;
     margin-inline-start: 20px;
     margin-inline-end: 0px;
+    letter-spacing: 1px;
 }
 .p_look {
     color: #FFFFFF;
@@ -126,9 +129,9 @@ strong, b {
 }
 .p_grey {
     font-family: 'Prompt', sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    color: rgb(230, 230, 230);
+    font-size: 13px;
+    font-weight: 300;
+    color: rgb(197 219 225 / 62%);
 }
 /* Seccion 1 */
 
@@ -155,13 +158,13 @@ strong, b {
     border-color: #000; */
 }
 .subtitulo_seccion_2 {
-    margin: 40px 10px 0px 10px;
+    margin: 40px 10px 40px 10px;
     padding: 0px;
 }
 #learn_more a {
     color: rgb(1, 188, 252);
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 500;
 }
 #learn_more {
     border-width: 0 ;
@@ -176,8 +179,8 @@ strong, b {
 }
 .texto_contenido_seccion_2 {
     float: left;
-    width: calc(50% - 20px);
-    margin: 35px 10px;
+    /* width: calc(50% - 30px); */
+    margin: 35px 10px 35px 30px;
     /* margin-left: 2em; */
 }
 li::marker {
@@ -189,7 +192,6 @@ li::marker {
 }
 .img_contenido_seccion_2 {
     width: 100%;
-    /* height: auto; */
 }
 .clearfix {
     clear: both;
@@ -209,8 +211,8 @@ li::marker {
     color: #FFFFFF;
     font-size: 16px;
     text-align: center;
-    padding: 20px 20px 0px 20px;
-    height: 40px;
+    padding: 1rem 0.5rem 0.2rem 0.5rem;
+    height: 1rem;
 }
 .contenido_seccion_3 {
     padding: 0px 10px;
@@ -219,27 +221,39 @@ li::marker {
     background-color: rgb(32, 39, 49);
 }
 .img_contenido_seccion_3 {   
-    width: 20%;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 .contenedor_seccion_3_separacion p {
-    padding: 5px 20px 30px 20px;
+    padding: 30px 20px 70px 20px;
     height: 30px;
 }
 
 /* For mobile phones: */
 [class*="col-"] {
     width: calc(100% - 20px);
-  }
+}
+
 @media only screen and (min-width: 600px) {
      /* For tablets: */
-    .col-s-3 {width:calc(25% - 20px);} 
-    .h1-s-3 {font-size: 40px; font-weight: 600;} 
-    .h2-s-3 {font-size: 32px; font-weight: 500;}    
-  }
+    .col-s-3 {
+        width:calc(25% - 20px);
+    } 
+    .h1-s-3 {
+        font-size: 40px; 
+        font-weight: 550;
+        margin-block-start: 50px;
+    } 
+    .h2-s-3 {
+        font-size: 32px; 
+        font-weight: 500;
+    }    
+}
 
 /* For screen responsive 940px */
 @media only screen and (min-width: 940px) {
     /* For desktop: */
-    .col-3 {width: calc(50% - 1em);}
-  }
+    .col-3 {
+        width: calc(50% - 40px);
+    }
+}
