@@ -1,0 +1,107 @@
+body {
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-family: 'Prompt', Montserrat, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+h2 {
+    font-family: 'Prompt', Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor_h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+.contenedor_h2 {
+    padding: 10px;
+    text-align: center;
+}
+
+.contenedor_video {
+    padding: 10px;
+    text-align: center;
+}
+
+div.minimalistBlack {
+    border: 3px solid #000000;
+    margin: 0% 5%;
+    width: 90%;
+    font-family: 'Prompt', Montserrat, sans-serif;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.divTable.minimalistBlack .divTableCell,
+.divTable.minimalistBlack .divTableHead {
+    border: 1px solid #000000;
+    padding: 5px 4px;
+}
+
+.divTable.minimalistBlack .divTableBody .divTableCell {
+    font-size: 13px;
+}
+
+.divTable.minimalistBlack .divTableRow:nth-child(even) {
+    background: #ECECEC;
+}
+
+.divTable.minimalistBlack .divTableHeading {
+    background: #CFCFCF;
+    background: -moz-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+    background: -webkit-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+    background: linear-gradient(to bottom, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+    border-bottom: 3px solid #000000;
+}
+
+.divTable.minimalistBlack .divTableHeading .divTableHead {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+}
+
+.minimalistBlack .tableFootStyle {
+    font-size: 14px;
+}
+
+/* DivTable */
+.divTable {
+    display: table;
+    clear: both;
+    height: 80%;
+    /* margin: 50px; */
+}
+
+.divTableRow {
+    display: table-row;
+}
+
+.divTableHeading {
+    display: table-header-group;
+}
+
+.divTableCell,
+.divTableHead {
+    display: table-cell;
+}
+
+.divTableHeading {
+    display: table-header-group;
+}
+
+.divTableFoot {
+    display: table-footer-group;
+}
+
+.divTableBody {
+    display: table-row-group;
+}
