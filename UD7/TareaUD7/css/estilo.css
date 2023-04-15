@@ -1,0 +1,71 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: url(../img/fondo2.png) repeat 0px 0px;
+
+    -webkit-animation: fondo 8s infinite linear;
+}
+
+.bus {
+    background: url(../img/bus_1080.png) no-repeat 0px 0px;
+    width: 1000px;
+    height: 385px;
+    position: relative;
+    top: 500px;
+
+   /* -webkit-animation-name: bus;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both; */
+
+    -webkit-animation: bus 8s ease-in-out infinite;
+}
+
+.rueda1 {
+    background-image: url(../img/rueda.png);
+    position: absolute;
+    width: 136px;
+    height: 136px;
+    bottom: 0px;
+    left: 150px;
+    z-index: 10px;
+
+    -webkit-animation: rueda .5s infinite linear;
+}
+
+.rueda2 {
+    background-image: url(../img/rueda.png);
+    position: absolute;
+    width: 136px;
+    height: 136px;
+    bottom: 0px;
+    left: 731px;
+    z-index: 10px;
+
+    -webkit-animation: rueda .5s infinite linear;
+}
+
+@-webkit-keyframes bus {
+    0% {left: -1000px;}
+    40% {left: 20%;}
+    50% {left: 22%;}
+    100% {left: 100%}
+}
+
+@-webkit-keyframes fondo {
+    0% {background-position: 0px 0;}
+    40% {background-position: -800px 0;}
+    50% {background-position: -1000px 0;}
+    100% {background-position: -1920px 0;}
+}
+
+@-webkit-keyframes rueda {
+    0% {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}
