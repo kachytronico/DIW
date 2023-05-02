@@ -1,0 +1,56 @@
+
+label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+}
+
+h1{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(25, 133, 83);
+}
+
+.submit{
+    text-align: center;
+}
+
+.redBordes{
+    border-radius: 15px;
+    height: 70px;
+    width: 180px;
+    font-size: x-large;
+    font-weight: bold;
+    background-color:rgb(241, 206, 139);
+}
+
+::-webkit-input-placeholder{
+    text-align: center;
+}
+
+#submit{
+    height: 100px;
+    width: 300px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+option{
+    text-align: center;
+}
+
+#fondo{
+    background-color:wheat;
+}
+
+html{
+    background: wheat;
+}
+
+.obli{
+    border-radius: 15px;
+    height: 70px;
+    width: 180px;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: rgb(241, 111, 111);
+}

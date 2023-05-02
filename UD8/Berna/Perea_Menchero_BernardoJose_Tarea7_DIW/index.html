@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body style="background: wheat;">
+    
+    <div style="width: 40%;margin-left: 30%;" id="fondo">
+        
+    <h1>Formulario de envio de datos</h1>
+    <div style="text-align: center;">
+    <form id="formDatos" method="POST" action="mail.php" enctype="multipart/form-data">
+        <br><br>
+        
+        <input type="text" id="nom" name="nom" placeholder="Nombre" class="redBordes">
+        <br><br>
+        <input type="text" id="ape" name="ape" placeholder="Apellidos" class="redBordes">
+        <br><br>
+        
+        <select id="pais" class="redBordes" name="codpais">
+            <option disabled selected>Prefijo</option>
+        </select>
+        <input type="text" id="tel" name="tel" placeholder="Telefono" class="redBordes">
+        <br><br>
+        <input type="date" class="redBordes" id="fecha" name="fecha">
+        <br><br>
+        <select id="prov" class="redBordes" name="prov">
+            <option disabled selected>Provincia</option>
+        </select>
+        <br><br>
+        <input type="text" id="email" name="email" class="redBordes" placeholder="Email">
+        <br>
+        <br>
+        <label id="valRango"></label>
+        <br><br>
+        <input type="range" class="form-range" id="customRange1" min="1" max="50" name="rang">
+        <br><br>
+        <label>Curriculum Vitae</label>
+        <input type="file" accept="application/pdf" name="cv">
+        <br><br>
+        <div class="submit">
+            <input type="submit" value="Enviar" class="btn btn-success" id="submit" >
+        </div>
+
+    </form>
+    </div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
