@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Landing page para recoger datos de interesados en trabajar en nuestra empresa</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <h1>Formulario de solicitud de empleo</h1>
+    <form action="enviar_email.php" method="post" onsubmit="return validarFormulario()">
+      <label for="nombre">Nombre y apellidos:</label><br>
+      <input type="text" id="nombre" name="nombre" required><br><br>
+
+      <label for="telefono">Teléfono:</label><br>
+      <select id="codigo_pais" name="codigo_pais" required>
+        <option value="+34">España (+34)</option>
+        <option value="+33">Francia (+33)</option>
+        <option value="+44">Reino Unido (+44)</option>
+      </select>
+      <input type="tel" id="telefono" name="telefono" required><br><br>
+
+      <label for="fecha_nacimiento">Fecha de nacimiento:</label><br>
+      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+      <label for="provincia_residencia">Provincia de residencia:</label><br>
+      <select id="provincia_residencia" name="provincia_residencia" required>
+        <option value="">Selecciona una provincia</option>
+        <option value="Almería">Almería</option>
+        <option value="Cádiz">Cádiz</option>
+        <option value="Córdoba">Córdoba</option>
+        <option value="Granada">Granada</option>
+        <option value="Huelva">Huelva</option>
+        <option value="Jaén">Jaén</option>
+        <option value="Málaga">Málaga</option>
+        <option value="Sevilla">Sevilla</option>
+      </select><br><br>
+
+      <label for="rango_salarial">Rango salarial deseado:</label><br>
+      <input type="range" id="rango_salarial" name="rango_salarial" min="10000" max="50000" step="1000" value="1000" required><br><br>
+
+      <label for="cv">Subir CV:</label><br>
+      <input type="file" id="cv" name="cv" accept=".pdf" required><br><br>
+
+      <label for="email">Correo electrónico:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <input type="submit" value="Enviar">
+    </form>
+
+    <script src="javascript/validacion.js"></script>
+  </body>
+</html>
