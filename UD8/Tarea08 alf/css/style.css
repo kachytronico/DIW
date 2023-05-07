@@ -42,22 +42,21 @@ label {
   margin-top: 1rem;
 }
 
-input,
-select {
-  display: flex;
+input, select {
   text-align: center;
-  width: 50%;
+  width: 80%;
   padding: 0.5rem;
   margin: auto;
-  margin-top: 0.5rem;
   border-radius: 5px;
   border: none;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 input[type="range"] {
-  width: 60%;
+  display: flex;
+  width: 80%;
   margin: auto;
 }
+
 /* Estilos para el pie de página */
 footer {
     margin-top: 3rem;
@@ -69,13 +68,17 @@ footer {
 
 .antes_de_validar{
   background-color:rgb(219, 254, 243);
+  margin: auto;
 }
 .focus{
+  margin: auto;
   font-weight: bold;
   font-size: x-large;
   background-color: rgb(153, 240, 179);
 }
+
 .obligatorio{
+  margin: auto;
   font-weight: bold;
   font-size: x-large;
   background-color: rgb(241, 111, 111);
@@ -83,15 +86,17 @@ footer {
 
 #submit{
   height: 80px;
-  width: 40%;
+  width: 100%;
   margin: auto;
   font-size: xx-large;
   font-weight: bold;
 }
 .submit{
-  text-align: center;
+  margin: auto;
 }
-
+.cv{
+  margin: auto;
+}
 /* Estilos para MIRAR */
 
 

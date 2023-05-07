@@ -13,7 +13,7 @@
     </header>
     <section>
       <h2>Rellena este formulario para trabajar con nosotros</h2>
-      <form id="formulario" method="POST" action="enviar_email.php" enctype="multipart/form-data">
+      <form id="formulario" method="POST" action="enviar_email.php" enctype="multipart/form-data" class="formulario">
         <br><br>
         <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellidos" class="antes_de_validar">
         <label for="telefono">Teléfono:</label>
@@ -46,7 +46,7 @@
         <input type="range" class="form-range" id="rango_salarial" min="10" max="50" name="rango">
 
         <label for="cv">Subir CV:</label>
-        <input type="file" id="cv" name="cv" accept=".pdf"  >
+        <input type="file" id="cv" name="cv" accept=".pdf" class="cv" >
 
         <label for="email">Correo electrónico:</label><br />
         <input type="email" id="email" name="email"  class="antes_de_validar"/>

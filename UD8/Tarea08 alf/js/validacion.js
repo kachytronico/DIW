@@ -26,42 +26,42 @@ window.onload = (event) => {
   
   formulario.addEventListener("submit", function(e){
   
-      if(formulario.childNodes[nombre].value==""){
-          nombre.placeholder = "Campo Obligatorio";
-          nombre.setAttribute("class","obligatorio");
-          validacion = false;
+      if(formulario.childNodes[4].value==""){
+        nombre.placeholder = "Campo Obligatorio";
+        nombre.setAttribute("class","obligatorio");
+        validacion = false;
       }
   
-      if(formulario.childNodes[codigo_pais].value=="Prefijo"){
-          codigo_pais.placeholder = "Campo Obligatorio";
-          codigo_pais.setAttribute("class","obligatorio");
-          validacion = false;
+      if(formulario.childNodes[10].value==""){
+        codigo_pais.placeholder = "Campo Obligatorio";
+        codigo_pais.setAttribute("class","obligatorio");
+        validacion = false;
       }
   
-      if(formulario.childNodes[telefono].value==""){
-          telefono.placeholder = "Campo Obligatorio";
-          telefono.setAttribute("class","obligatorio");
-          validacion = false;
+      if(formulario.childNodes[10].value==""){
+        telefono.placeholder = "Campo Obligatorio";
+        telefono.setAttribute("class","obligatorio");
+        validacion = false;
       }
   
-      if(formulario.childNodes[fecha_nacimiento].value==""){
-          fecha_nacimiento.placeholder = "Campo Obligatorio";
-          fecha_nacimiento.setAttribute("class","obligatorio");
-          validacion = false;
+      if(formulario.childNodes[14].value==""){
+        fecha_nacimiento.placeholder = "Campo Obligatorio";
+        fecha_nacimiento.setAttribute("class","obligatorio");
+        validacion = false;
       }
   
-      if(formulario.childNodes["provincia_residencia"].value=="Provincia"){
-          provincia.placeholder = "Campo Obligatorio";
-          provincia.setAttribute("class","obligatorio");
-          validacion = false;
+      if(formulario.childNodes[18].value==""){
+        provincia.placeholder = "Campo Obligatorio";
+        provincia.setAttribute("class","obligatorio");
+        validacion = false;
       }
   
-      if(formulario.childNodes["email"].value==""){
-          email.placeholder = "Campo Obligatorio";
-          email.setAttribute("class","obligatorio");
-          validacion = false;
+      if(formulario.childNodes[33].value==""){
+        email.placeholder = "Campo Obligatorio";
+        email.setAttribute("class","obligatorio");
+        validacion = false;
       }
-   
+
       if(validacion==false)
           e.preventDefault();
       
