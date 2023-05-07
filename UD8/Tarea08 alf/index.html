@@ -26,9 +26,9 @@
         </select>
         <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" class="rantes_de_validar">
         <label for="fecha_nacimiento">Fecha de nacimiento:</label>
-        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" >
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" class="antes_de_validar">
         <label for="provincia_residencia">Provincia de residencia:</label>
-        <select id="provincia_residencia" name="provincia_residencia" >
+        <select id="provincia_residencia" name="provincia_residencia"class="antes_de_validar" >
           <option value="">Selecciona una provincia</option>
           <option value="Almería">Almería</option>
           <option value="Cádiz">Cádiz</option>
@@ -49,8 +49,8 @@
         <input type="file" id="cv" name="cv" accept=".pdf"  >
 
         <label for="email">Correo electrónico:</label><br />
-        <input type="email" id="email" name="email"  /><br /><br />
-
+        <input type="email" id="email" name="email"  class="antes_de_validar"/>
+        <br /><br />
         <input type="submit" value="Enviar"  class="btn btn-dark" id="submit" />
         </form>
     </section>
