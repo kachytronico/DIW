@@ -8,7 +8,6 @@ const codigo_pais = document.getElementById("codigo_pais");
 const email = document.getElementById("email");
 const fecha_nacimiento = document.getElementById("fecha_nacimiento");
 const provincia = document.getElementById("provincia_residencia");
-const salario = document.getElementById("salario");
 const cv = document.getElementById("cv");
 
 let validacion = true;
@@ -25,27 +24,27 @@ window.onload = (event) => {
   
   });
   
-  formulario.addEventListener("focus", function(e){
+  formulario.addEventListener("submit", function(e){
   
-      if(formulario.childNodes["nombre"].value==""){
+      if(formulario.childNodes[nombre].value==""){
           nombre.placeholder = "Campo Obligatorio";
           nombre.setAttribute("class","obligatorio");
           validacion = false;
       }
   
-      if(formulario.childNodes["codigo_pais"].value=="Prefijo"){
+      if(formulario.childNodes[codigo_pais].value=="Prefijo"){
           codigo_pais.placeholder = "Campo Obligatorio";
           codigo_pais.setAttribute("class","obligatorio");
           validacion = false;
       }
   
-      if(formulario.childNodes["telefono"].value==""){
+      if(formulario.childNodes[telefono].value==""){
           telefono.placeholder = "Campo Obligatorio";
           telefono.setAttribute("class","obligatorio");
           validacion = false;
       }
   
-      if(formulario.childNodes["fecha_nacimiento"].value==""){
+      if(formulario.childNodes[fecha_nacimiento].value==""){
           fecha_nacimiento.placeholder = "Campo Obligatorio";
           fecha_nacimiento.setAttribute("class","obligatorio");
           validacion = false;
