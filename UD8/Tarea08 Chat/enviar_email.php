@@ -3,6 +3,7 @@ if(isset($_POST['enviar'])) {
 
     // Recoger los datos del formulario
     $nombre = $_POST['nombre'];
+    $codigo_pais = $_POST['codigo_pais'];
     $telefono = $_POST['telefono'];
     $email = $_POST['email'];
     $fecha_nacimiento = $_POST['fecha_nacimiento'];
@@ -12,10 +13,11 @@ if(isset($_POST['enviar'])) {
     $cv_tmp = $_FILES['cv']['tmp_name'];
 
     // Configurar los datos del correo
-    $destinatario = "tu_correo_electronico@tudominio.com";
+    $destinatario = $email;
     $asunto = "Solicitud de empleo";
 
-    $mensaje = "Nombre: $nombre\n\n";
+    $mensaje = "<b>".$nombre."</b> has intrucido tus datos en el formulario<br>
+    $mensaje .= "Código del pais: $codigo_pais\n\n";
     $mensaje .= "Teléfono: $telefono\n\n";
     $mensaje .= "Email: $email\n\n";
     $mensaje .= "Fecha de nacimiento: $fecha_nacimiento\n\n";

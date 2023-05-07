@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset="UTF-8">
-    <title>Landing page para recoger datos de interesados en trabajar en nuestra empresa</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8" />
+    <title>
+      Landing page para recoger datos de interesados en trabajar en nuestra
+      empresa
+    </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/validacion.js"></script>
+
   </head>
+  
   <body>
-    <h1>Formulario de solicitud de empleo</h1>
-    <form action="enviar_email.php" method="post" onsubmit="return validarFormulario()">
-      <label for="nombre">Nombre y apellidos:</label><br>
-      <input type="text" id="nombre" name="nombre" required><br><br>
-
-      <label for="telefono">Teléfono:</label><br>
-      <select id="codigo_pais" name="codigo_pais" required>
-        <option value="+34">España (+34)</option>
-        <option value="+33">Francia (+33)</option>
-        <option value="+44">Reino Unido (+44)</option>
-      </select>
-      <input type="tel" id="telefono" name="telefono" required><br><br>
-
-      <label for="fecha_nacimiento">Fecha de nacimiento:</label><br>
-      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
-
-      <label for="provincia_residencia">Provincia de residencia:</label><br>
+    <header> 
+    <h1>Bienvenido a nuestra empresa de Diseño Web</h1>
+    </header>
+    <section>
+      <h2>Rellena este formulario para trabajar con nosotros</h2>
+      <form id="formulario" action="enviar_email.php" method="post" onsubmit="return validarFormulario()">
+        <label for="nombre">Nombre y apellidos:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="telefono">Teléfono:</label>
+        <select id="codigo_pais" name="codigo_pais" required>
+          <option disabled selected>Prefijo</option>
+          <option value="ES">+34 (España)</option>
+          <option value="AR">+54 (Argentina)</option>
+          <option value="MX">+52 (México)</option>
+          <option value="CO">+57 (Colombia)</option>
+        </select>
+      <input type="tel" id="telefono" name="telefono" required>
+      <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+      <label for="provincia_residencia">Provincia de residencia:</label>
       <select id="provincia_residencia" name="provincia_residencia" required>
         <option value="">Selecciona una provincia</option>
         <option value="Almería">Almería</option>
@@ -33,20 +43,35 @@
         <option value="Jaén">Jaén</option>
         <option value="Málaga">Málaga</option>
         <option value="Sevilla">Sevilla</option>
-      </select><br><br>
+        <!-- agregar todas las provincias aquí -->
+      </select>
 
-      <label for="rango_salarial">Rango salarial deseado:</label><br>
-      <input type="range" id="rango_salarial" name="rango_salarial" min="10000" max="50000" step="1000" value="1000" required><br><br>
+      <label for="rango_salarial">Rango salarial deseado:</label>
+      <input type="range" id="salario" name="salario" min="10000" max="50000" step="10000" value="10000" required>
+      <span id="salario_valor"></span>
 
-      <label for="cv">Subir CV:</label><br>
-      <input type="file" id="cv" name="cv" accept=".pdf" required><br><br>
+      <label for="cv">Subir CV:</label>
+      <input type="file" id="cv" name="cv" accept=".pdf" required >
 
-      <label for="email">Correo electrónico:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
+      <label for="email">Correo electrónico:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
 
-      <input type="submit" value="Enviar">
-    </form>
+      <input type="submit" value="Enviar" />
+      </form>
+    </section>
 
-    <script src="javascript/validacion.js"></script>
+    <footer>
+      <p>© 2023 Nuestra Empresa de Diseño Web. Todos los derechos reservados.</p>
+    </footer>
+
+  <script>
+      var rango_salarial = document.getElementById("rango_salarial");
+      var salarioValor = document.getElementById("salario_valor");
+      salarioValor.innerHTML = salario.value + "€"; // Mostrar valor inicial del slider
+      salario.oninput = function () {
+      salarioValor.innerHTML = this.value + "€"; // Actualizar valor del slider
+      }
+  </script>
+
   </body>
 </html>
