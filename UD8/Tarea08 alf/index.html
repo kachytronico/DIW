@@ -13,18 +13,18 @@
     </header>
     <section>
       <h2>Rellena este formulario para trabajar con nosotros</h2>
-      <form id="formulario" method="POST" enctype="multipart/form-data">
+      <form id="formulario" method="POST" action="enviar_email.php" enctype="multipart/form-data">
         <br><br>
-        <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellidos">
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellidos" class="antes_de_validar">
         <label for="telefono">Teléfono:</label>
-        <select id="codigo_pais" name="codigo_pais" >
+        <select id="codigo_pais" name="codigo_pais" class="antes_de_validar" >
           <option disabled selected>Prefijo</option>
           <option value="ES">+34 (España)</option>
           <option value="AR">+54 (Argentina)</option>
           <option value="MX">+52 (México)</option>
           <option value="CO">+57 (Colombia)</option>
         </select>
-        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
+        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" class="rantes_de_validar">
         <label for="fecha_nacimiento">Fecha de nacimiento:</label>
         <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" >
         <label for="provincia_residencia">Provincia de residencia:</label>
@@ -51,7 +51,7 @@
         <label for="email">Correo electrónico:</label><br />
         <input type="email" id="email" name="email"  /><br /><br />
 
-        <input type="submit" value="Enviar" />
+        <input type="submit" value="Enviar"  class="btn btn-dark" id="submit" />
         </form>
     </section>
 

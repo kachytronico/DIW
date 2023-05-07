@@ -49,7 +49,7 @@ rango.addEventListener("change", function(){
 
 });
 
-formDatos.addEventListener("submit", function(event){
+formDatos.addEventListener("redBordes{", function(event){
 
 
     if(formDatos.childNodes[4].value==""){
