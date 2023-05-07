@@ -25,7 +25,7 @@ window.onload = (event) => {
   
   });
   
-  formulario.addEventListener("antes_de_validar", function(e){
+  formulario.addEventListener("focus", function(e){
   
       if(formulario.childNodes["nombre"].value==""){
           nombre.placeholder = "Campo Obligatorio";
@@ -57,7 +57,7 @@ window.onload = (event) => {
           validacion = false;
       }
   
-      if(formulario.childNodes["enmail"].value==""){
+      if(formulario.childNodes["email"].value==""){
           email.placeholder = "Campo Obligatorio";
           email.setAttribute("class","obligatorio");
           validacion = false;
@@ -69,35 +69,35 @@ window.onload = (event) => {
   })
   
   nombre.addEventListener("focus", function(){
-    nombre.setAttribute("class","redBordes");
+    nombre.setAttribute("class","focus");
     nombre.placeholder = "Nombre y Apellidos";
   
   })
   
   
   codigo_pais.addEventListener("focus", function(){
-    codigo_pais.setAttribute("class","redBordes");
+    codigo_pais.setAttribute("class","focus");
   
   })
   
   telefono.addEventListener("focus", function(){
-      telefono.setAttribute("class","redBordes");
+      telefono.setAttribute("class","focus");
       telefono.placeholder = "Telefono";
   
   })
   
   fecha_nacimiento.addEventListener("focus", function(){
-    fecha_nacimiento.setAttribute("class","redBordes");
+    fecha_nacimiento.setAttribute("class","focus");
   
   })
   
   provincia.addEventListener("focus", function(){
-    provincia.setAttribute("class","redBordes");
+    provincia.setAttribute("class","focus");
   
   })
   
   email.addEventListener("focus", function(){
-    email.setAttribute("class","redBordes");
+    email.setAttribute("class","focus");
     email.placeholder = "Email";
   
   })

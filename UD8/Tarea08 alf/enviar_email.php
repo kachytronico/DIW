@@ -1,5 +1,6 @@
 <?php
-if(isset($_POST['enviar'])){
+
+if(isset($_POST['nom'])){
 
     // Recoger los datos del formulario
     $nombre = $_POST['nombre'];
@@ -17,7 +18,7 @@ if(isset($_POST['enviar'])){
     $asunto = "Solicitud de empleo";
 
     $mensaje = "<b>".$nombre."</b> gracias por rellenar el formulario. Los datos introducidos son los siguientes:<br>;
-    <b>Telefono:</b> (".$codigo_pais.") ".$telefono."<br>
+    <b>Teléfono:</b> (".$codigo_pais.") ".$telefono."<br>
     <b>Fecha de nacimiento:</b> ".$fecha_nacimiento."<br>
     <b>Provincia:</b> ".$provincia."<br>
     <b>Rango salarial:</b> ".$rango_salarial." Euros/Brutos anuales<br>

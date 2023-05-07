@@ -32,5 +32,4 @@ if(isset($_POST['nom'])){
 
     header("refresh:10, url=index.html");
 }
-
 ?>
