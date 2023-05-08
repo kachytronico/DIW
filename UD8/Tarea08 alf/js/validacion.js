@@ -14,54 +14,54 @@ let validacion = true;
 
 window.onload = (event) => {
 
-  valor_salarial_rango.innerHTML = "<b>25000 Euros/Brutos Anuales</b>";
+  valor_salarial_rango.innerHTML = "<b>25000 € / Brutos Anuales</b>";
   
   }
   
   rango_salarial.addEventListener("change", function(){
   
-    valor_salarial_rango.innerHTML = "<b>" + (rango_salarial.value *1000) +" Euros/Brutos Anuales</b>";
+    valor_salarial_rango.innerHTML = "<b>" + (rango_salarial.value *1000) +" € /Brutos Anuales</b>";
   
   });
   
   formulario.addEventListener("submit", function(e){
   
-      if(formulario.childNodes[4].value==""){
+      if(nombre.value==""){
         nombre.placeholder = "Campo Obligatorio";
         nombre.setAttribute("class","obligatorio");
         validacion = false;
       }
   
-      if(formulario.childNodes[10].value==""){
+      if(codigo_pais.value=="Prefijo"){
         codigo_pais.placeholder = "Campo Obligatorio";
         codigo_pais.setAttribute("class","obligatorio");
         validacion = false;
       }
   
-      if(formulario.childNodes[10].value==""){
+      if(telefono.value==""){
         telefono.placeholder = "Campo Obligatorio";
         telefono.setAttribute("class","obligatorio");
         validacion = false;
       }
   
-      if(formulario.childNodes[14].value==""){
+      if(fecha_nacimiento.value==""){
         fecha_nacimiento.placeholder = "Campo Obligatorio";
         fecha_nacimiento.setAttribute("class","obligatorio");
         validacion = false;
       }
   
-      if(formulario.childNodes[18].value==""){
+      if(provincia.value==""){
         provincia.placeholder = "Campo Obligatorio";
         provincia.setAttribute("class","obligatorio");
         validacion = false;
       }
   
-      if(formulario.childNodes[33].value==""){
+      if(email.value==""){
         email.placeholder = "Campo Obligatorio";
         email.setAttribute("class","obligatorio");
         validacion = false;
       }
-
+      
       if(validacion==false)
           e.preventDefault();
       

@@ -12,7 +12,7 @@ body {
 h1 {
   text-align: center;
   color: #546771;
-  margin: 30px 0;
+  margin: 30px 0 !important;
 }
 
 h2 {
@@ -44,19 +44,24 @@ label {
 
 input, select {
   text-align: center;
-  width: 80%;
+  width: 100%;
   padding: 0.5rem;
   margin: auto;
-  border-radius: 5px;
   border: none;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-color: gray;
+  border: 0px 2px 0px 0px solid #ffffff
+}
+#provincia_residencia{
+
 }
 input[type="range"] {
   display: flex;
   width: 80%;
   margin: auto;
 }
-
+input:-internal-autofill-selected {
+  background-color:  rgba(67, 156, 106, 0.7) !important;
+}
 /* Estilos para el pie de página */
 footer {
     margin-top: 3rem;
@@ -67,7 +72,7 @@ footer {
 }
 
 .antes_de_validar{
-  background-color:rgb(219, 254, 243);
+  background-color:rgb(219, 254, 243) !important;
   margin: auto;
 }
 .focus{
@@ -85,7 +90,7 @@ footer {
 } 
 
 #submit{
-  height: 80px;
+  height: 100px;
   width: 100%;
   margin: auto;
   font-size: xx-large;
@@ -93,37 +98,15 @@ footer {
 }
 .submit{
   margin: auto;
+  height: 100px;
+  width: 50%;
+  font-size: xx-large;
+  font-weight: bold;
 }
 .cv{
   margin: auto;
 }
-/* Estilos para MIRAR */
 
-
-
-/* No se para qué
-
-
-
-
-Solo uno de los dos
-
-
-option{
-  text-align: center;
-}
-
-button {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 5px;
-  background-color: #008CBA;
-  color: white;
-  font-size: 1.2rem;
-  font-weight: bold;
-  cursor: pointer;
-}
 
 
 
