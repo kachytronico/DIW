@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #392635;
+}
+
+.cubo, .cubo .cara {
+    width: 200px;
+    height: 200px;
+}
+
+.cubo .cara {
+    position: absolute;
+    background-image: url("../img/dado.jpg");
+    background-size: 600%;
+    background-position-y: calc(100% * (2));
+    animation: change 2s 1s linear infinite;
+    animation-play-state: paused;
+}
+.cubo {
+    margin: 100px auto;
+    animation: rotate 2s infinite linear;
+    animation-play-state: paused;
+}
+
+.cubo:hover {
+    animation-play-state: running;
+}
+
+.cubo:hover .cara {
+    animation-play-state: running;
+}
+
+
+@keyframes change {
+    0% {
+        background-position-y: calc(100% * 0)
+    }
+
+    14.2856% {
+        background-position-y: calc(100% * 0)
+    }
+
+    14.2857% {
+        background-position-y: calc(100% * 1)
+    }
+
+    28.5713% {
+        background-position-y: calc(100% * 1)
+    }
+
+    28.5714% {
+        background-position-y: calc(100% * 2)
+    }
+
+    42.8570% {
+        background-position-y: calc(100% * 2)
+    }
+
+    42.8571% {
+        background-position-y: calc(100% * 3)
+    }
+
+    57.1427% {
+        background-position-y: calc(100% * 3)
+    }
+
+    57.1428% {
+        background-position-y: calc(100% * 4)
+    }
+
+    71.4284% {
+        background-position-y: calc(100% * 4)
+    }
+
+    71.4285% {
+        background-position-y: calc(100% * 5)
+    }
+
+    85.7141% {
+        background-position-y: calc(100% * 5)
+    }
+
+    85.7142% {
+        background-position-y: calc(100% * 6)
+    }
+
+    100% {
+        background-position-y: calc(100% * 6)
+    }
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+/* CAMBIO DE NÚMERO DE LAS CARAS */
+
+/* 1 */
+.cubo .cara#superior {
+    background-position-x: calc(100% * (1 - 1));
+}
+
+/* 4 */
+.cubo .cara#frente {
+    background-position-x: calc(100% * (4 - 1));
+}
+
+/* 6 */
+
+.cubo .cara#atras {
+    background-position-x: calc(100% * (6 - 1));
+}
+
+/* 5 */
+
+.cubo .cara#derecha {
+    background-position-x: calc(100% * (5 - 1));
+}
+
+/* 3 */
+
+.cubo .cara#izquierda {
+    background-position-x: calc(100% * (3 - 1));
+}
+/* 2 */
+
+.cubo .cara#inferior {
+    background-position-x: calc(100% * (2 - 1));
+}
+
+
+.cubo {
+    transform-style: preserve-3d;
+    /*transform: perspective(700px) rotateX(-30deg) rotateY(-30deg);*/
+}
+
+
+.cubo .cara#derecha {
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.cubo .cara#izquierda {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.cubo .cara#superior {
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.cubo .cara#inferior {
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+.cubo .cara#frente {
+    transform: translateZ(100px);
+}
+
+.cubo .cara#atras {
+    transform: translateZ(-100px);
+}
